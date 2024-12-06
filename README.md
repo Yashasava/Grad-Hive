@@ -14,7 +14,7 @@ applications.
 ✓ Facilitate seamless communication between students and employers to improve hiring 
 workflows
 
-#Workflow
+# Workflow
 1. Student Registration:
 o A student can register using the Student entity and can log in to the system.
 2. Viewing Job Postings:
@@ -29,16 +29,16 @@ approved, the JobApplication status is updated to APPROVED.
 o After approval, the student can schedule an interview by creating an 
 Interview entity, linked to the JobApplication
 
-#Scope of the Project
+# Scope of the Project
 The scope of the Campus Requirement project involves developing a REST API to manage 
 job postings and student applications, including functionalities for handling Users, Students, 
 Job Postings, and Job Applications.
 
-#Project Structure
+# Project Structure
 Overview of Project Architecture: The project follows a layered architecture pattern, with 
 distinct layers for handling different aspects of functionality and data management
 
-#Layers Description
+# Layers Description
 1. Controller Layer: Responsible for handling incoming HTTP requests, processing them, 
 and returning appropriate responses.
 2. Service Layer: Acts as an intermediary between the controller and the data access layer 
@@ -46,7 +46,7 @@ and returning appropriate responses.
 3. DAO (Data Access Object) Layer: Responsible for interacting with the database and 
 performing CRUD operations.
 
-#Responsibilities of each layer
+# Responsibilities of each layer
 • Controller Layer:
 ➢ Handle incoming HTTP requests.
 ➢ Validate request parameters and payload.
@@ -63,7 +63,7 @@ performing CRUD operations.
 ➢ Handle database transactions and connections.
 ➢ Abstract away database-specific details from the service layer.
 
-#Used Technology Stack
+# Used Technology Stack
 ✓ Backend Framework: Spring Boot 2
 ✓ Database: MySQL
 ✓ Database Framework: Hibernate 5
@@ -72,15 +72,15 @@ performing CRUD operations.
 ✓ Development Environment: Eclipse
 ✓ API Testing Tool: Postman
 
-#Modules in Project
+# Modules in Project
 1. User Module
 2. Student Module
 3. Job Posting Module
 4. Job Application Module
 5. Interview Module
 
-#In Detail About Modules and Its APIs
-*User Module
+# In Detail About Modules and Its APIs
+* User Module
 Description: This module manages operations related to user authentication and 
 management.
 API Endpoints:
@@ -90,7 +90,7 @@ DELETE /user/deleteUser/{username}: Deletes a user by username.
 GET /user/allUsers: Retrieves a list of all registered users.
 GET /user/getUser/{username}: Fetches a user by username.
 PUT /user/updateUser: Updates user details.
-*Student Module
+* Student Module
 Description: This module manages operations related to student registration and 
 management.
 API Endpoints:
@@ -98,7 +98,7 @@ POST /students/register: Registers a new student.
 GET /students/allStudents: Retrieves a list of all registered students.
 DELETE /students/deleteStudent/{id}: Deletes a student by ID.
 PUT /students/updateStudent: Updates student details.
-*Job Posting Module
+* Job Posting Module
 Description: This module handles job postings and enables institutions to manage job 
 opportunities.
 API Endpoints:
@@ -106,12 +106,12 @@ POST /job-postings/createJob: Creates a new job posting.
 GET /job-postings/allJobs: Retrieves a list of all job postings.
 DELETE /job-postings/deleteJob/{id}: Deletes a job posting by ID.
 PUT /job-postings/updateJob: Updates job posting details.
-*Job Application Module
+* Job Application Module
 Description: This module allows students to apply for job postings.
 API Endpoints:
 POST /jobApplication/apply: Submits a job application.
 PUT /jobApplication/updateStatus/{id}/{status}: Updates the status of a job application.
-*Interview Module
+* Interview Module
 Description: This module manages the interview process for job applications, allowing 
 students and employers to schedule and track interviews.
 API Endpoints:
