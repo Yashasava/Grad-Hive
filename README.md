@@ -1,5 +1,5 @@
 # Grad-Hive
-The Campus Requirement API is a Spring Boot REST API project designed to facilitate the 
+The Gradhive is a Spring Boot REST API project designed to facilitate the 
 management of campus job postings and student applications. It allows institutions to post 
 job opportunities and enables students to apply for these jobs. The primary entities in the 
 system are Students, Users, Job Postings, Job Application and Interviews. The application 
@@ -30,7 +30,7 @@ o After approval, the student can schedule an interview by creating an
 Interview entity, linked to the JobApplication
 
 # Scope of the Project
-The scope of the Campus Requirement project involves developing a REST API to manage 
+The scope of Gradhive involves developing a REST API to manage 
 job postings and student applications, including functionalities for handling Users, Students, 
 Job Postings, and Job Applications.
 
@@ -117,5 +117,5 @@ students and employers to schedule and track interviews.
 API Endpoints:
 POST /interview/schedule
 GET /interview/{id}
-PUT /interview/updateStatus/{id}/{status
+PUT /interview/updateStatus/{id}/{status}
 
